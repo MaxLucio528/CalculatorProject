@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes","url":"allclasses-index.html"},{"p":"calculus","l":"Calculus"},{"p":"calculus","l":"Division"},{"p":"calculus","l":"MainMenu"},{"p":"calculus","l":"Multiplication"},{"p":"calculus","l":"ProgramExecution"},{"p":"calculus","l":"StartProgram"},{"p":"calculus","l":"Subtraction"},{"p":"calculus","l":"Sum"}]
