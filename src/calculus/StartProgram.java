@@ -14,7 +14,6 @@ public class StartProgram {
 	/**
 	 * Método main, responsável pela inicialização do programa e que trata eventuais
 	 * exceções que podem vir a ocorrer.
-	 * @author Max Lucio
 	 * @param args String[] - Parâmetro padrão da main no Java.
 	 */
 	public static void main(String[] args) {

@@ -12,7 +12,6 @@ public class Subtraction extends Calculus {
 	
 	/**
 	 * Método construtor de Subtraction, que apenas inicializa ambos os atributos.
-	 * @author Max Lucio
 	 * @param num float - Números para executar a subtração, aqui inicializado com 0
 	 * @param result double - Número que contêm o resultado da subtração, aqui inicializado com 0.0
 	 */
@@ -23,7 +22,6 @@ public class Subtraction extends Calculus {
 	/**
 	 * Método que pega os números que o usuário definiu para a fazer a subtração e que chama o
 	 * método operation para executar a subtração.
-	 * @author Max Lucio
 	 * @param num float - Números para executar a subtração
 	 */
 	@Override
@@ -34,7 +32,6 @@ public class Subtraction extends Calculus {
 
 	/**
 	 * Método que subtrai todos os números definidos pelo usuário.
-	 * @author Max Lucio
 	 */
 	@Override
 	public void operation() {
@@ -47,7 +44,6 @@ public class Subtraction extends Calculus {
 
 	/**
 	 * Método que retorna o valor da subtração efetuada.
-	 * @author Max Lucio
 	 * @return double - Valor da subtração efetuada
 	 */
 	@Override

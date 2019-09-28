@@ -7,7 +7,7 @@ import java.util.Scanner;
 /**
  * Classe responsável pela execução do programa, contendo o método que faz isso.
  * @author Max Lucio
- * @version 1.1
+ * @version 1.1.1
  * @since Release 01 da aplicação
  */
 public class ProgramExecution {
@@ -16,7 +16,6 @@ public class ProgramExecution {
 	 * Método que executa todos os processos do programa recebendo os números com que
 	 * o usuário irá fazer um cálculo e redirecionando para as classes que executam 
 	 * as operações matemáticas.
-	 * @author Max Lucio
 	 * @throws InputMismatchException - Exceção jogada caso o usuário digite qualquer
 	 * coisa que não seja um número.
 	 */
@@ -24,6 +23,7 @@ public class ProgramExecution {
 		int op;
 		double result;
 		String num;
+		String exp;
 		Scanner input = new Scanner(System.in);
 		MainMenu menu = new MainMenu();
 		ArrayList<Calculus> calculus = new ArrayList<Calculus>();
@@ -31,6 +31,7 @@ public class ProgramExecution {
 		calculus.add(new Subtraction(0, 0.0));
 		calculus.add(new Multiplication(0, 0.0));
 		calculus.add(new Division(0, 0.0));
+		calculus.add(new Power(0, 0, 0.0));
 		
 		do {
 			menu.generateMenu();
@@ -114,6 +115,22 @@ public class ProgramExecution {
 					result = calculus.get(3).showResult();
 					
 					System.out.println("\nO resultado da divisão é: " + result + "\n");
+				break;
+				case 5:
+					System.out.println("\nDigite a base para calcular a potência: ");
+					
+					num = input.nextLine();
+						
+					System.out.println("\nDigite o expoente para calcular a potência: ");
+						
+					exp = input.nextLine();
+						
+					calculus.get(4).getNumbers(Float.parseFloat(num));
+					((Power) calculus.get(4)).getExponent(Float.parseFloat(exp));
+					
+					result = calculus.get(4).showResult();
+					
+					System.out.println("\nO resultado da potenciação é: " + result + "\n");
 				break;
 				default:
 					System.out.println("\nOpção Inválida! Tente novamente...\n");

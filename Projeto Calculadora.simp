@@ -19,7 +19,7 @@
       </counter>
       <counter>
         <item-type type-id="generalization" type="UmlGeneralization" />
-        <value>8</value>
+        <value>9</value>
       </counter>
       <counter>
         <item-type type-id="universal-connector" type="UniversalConnector" />
@@ -31,7 +31,7 @@
       </counter>
       <counter>
         <item-type type-id="" type="AbstractElementGroup" />
-        <value>10</value>
+        <value>25</value>
       </counter>
     </entity-ids>
     <diagrams>
@@ -43,11 +43,11 @@
     <fields>
       <counter>
         <type>SoftwareIdeasModeler.Core.DiagramItems.Fields.AttributeField</type>
-        <value>8</value>
+        <value>9</value>
       </counter>
       <counter>
         <type>SoftwareIdeasModeler.Core.DiagramItems.Fields.OperationField</type>
-        <value>19</value>
+        <value>20</value>
       </counter>
     </fields>
   </counters>
@@ -102,7 +102,7 @@
       </meta>
       <abstract-items />
       <sub-models />
-      <diagram type="uml-class" id="p02b68fe3a5c5499ca01dcb5878119f52_487096572" name="Calculadora" order-index="1" uid="" show-id="false" show-name="true" show-parent-name="false" name-style="local-auto-parents" show-stereotypes="true" show-tagged-values="false" show-template-parameters="true" show-fields="true" show-empty-compartments="true" show-special-indicators="false" show-attributes="true" show-attribute-visibility="true" show-operations="true" show-operation-parameters="true" show-operation-visibility="true" show-nullability="true" show-sequence-number="false" show-extension-points="false" show-relationship-texts="true" show-description="false" show-field-description="false" auto-routed-paths="false" view-location="56,225">
+      <diagram type="uml-class" id="p02b68fe3a5c5499ca01dcb5878119f52_487096572" name="Calculadora" order-index="1" uid="" show-id="false" show-name="true" show-parent-name="false" name-style="local-auto-parents" show-stereotypes="true" show-tagged-values="false" show-template-parameters="true" show-fields="true" show-empty-compartments="true" show-special-indicators="false" show-attributes="true" show-attribute-visibility="true" show-operations="true" show-operation-parameters="true" show-operation-visibility="true" show-nullability="true" show-sequence-number="false" show-extension-points="false" show-relationship-texts="true" show-description="false" show-field-description="false" auto-routed-paths="false" view-location="894,45">
         <style>
           <background-color index="1" color="#FFFFFFFF" />
           <background-color index="2" color="#FFFFFFFF" />
@@ -114,7 +114,7 @@
           </authors>
           <description />
           <creation-date>09/27/2019 10:46:52</creation-date>
-          <change-date>09/27/2019 15:17:31</change-date>
+          <change-date>09/28/2019 15:44:50</change-date>
           <revision-count>0</revision-count>
           <version />
         </meta>
@@ -427,6 +427,67 @@
               <stereotype name="use" />
             </stereotypes>
           </item>
+          <item id="dic8c35f3669fb4b52aa8edc7e4efce2314109" cid="" type="class" name="Power" style-class="" visibility="package" change-tracking-state="added" creation-date="09/27/2019 10:48:39">
+            <attributes>
+              <attribute id="a99b371500d5042e0978965c4f74cec05559" cid="ELEM001" name="num" creation-date="01/01/0001 00:00:00" type="float" type-id="float" visibility="private">
+                <source-codes>
+                  <source-code language="ActionScript" uid="scs-372f568b-238a-44b1-ab1f-78d7d0c88dd2" />
+                </source-codes>
+              </attribute>
+              <attribute id="abfe7705e7238460db63ba8053d2b8ebe612" cid="ELEM008" name="exp" creation-date="01/01/0001 00:00:00" type="float" type-id="float" visibility="private">
+                <source-codes>
+                  <source-code language="ActionScript" uid="scs-90823e03-4ff7-453c-aaec-4232f9665224" />
+                </source-codes>
+              </attribute>
+              <attribute id="a093fb56cf7934bc391e18285d42fd93f103" cid="ELEM002" name="result" creation-date="01/01/0001 00:00:00" type="double" type-id="double" visibility="private">
+                <source-codes>
+                  <source-code language="ActionScript" uid="scs-8bec03be-99a6-48e2-8193-95355c379e00" />
+                </source-codes>
+              </attribute>
+            </attributes>
+            <operations>
+              <operation id="o28d28678fd6c476699fba4d2923adc3f382" cid="ELEM010" name="Power" creation-date="01/01/0001 00:00:00" type="" type-id="" visibility="public">
+                <parameters>
+                  <parameter id="p5bdc0e193b194003b10a983be840b338" name="num" type="float" type-id="float" />
+                  <parameter id="p0d7c4599db094da98d247c3bbd89e703" name="exp" type="float" type-id="float" />
+                  <parameter id="p4c7a236a46134e8491061cf6797c963b" name="result" type="double" type-id="double" />
+                </parameters>
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+              <operation id="o9f25619c9de340f5a437cc01414fe1d0883" cid="ELEM013" name="getNumbers" creation-date="01/01/0001 00:00:00" type="void" type-id="void" visibility="public">
+                <parameters>
+                  <parameter id="p698f8449ea8d4c448a86bb4cb8e51c2d" name="num" type="float" type-id="float" />
+                </parameters>
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+              <operation id="oca590d6e84d44347b7b7989316fd4bfa144" cid="ELEM019" name="getExponent" creation-date="01/01/0001 00:00:00" type="void" type-id="void" visibility="public">
+                <parameters>
+                  <parameter id="p7ce5fbf7777f4bec9713e6f04048b3a3" name="exp" type="float" type-id="float" />
+                </parameters>
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+              <operation id="oec099456904741949d32167c437f7cfd878" cid="ELEM011" name="operation" creation-date="01/01/0001 00:00:00" type="void" type-id="void" visibility="public">
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+              <operation id="ocda014a9b1074a4690e121040b4df3bc747" cid="ELEM014" name="showResult" creation-date="01/01/0001 00:00:00" type="double" type-id="double" visibility="public">
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+            </operations>
+            <source-codes>
+              <source-code language="ActionScript" />
+            </source-codes>
+          </item>
+          <item id="82482a7e602d40d4878d289a859aeefb" cid="GNR008" type="generalization" name="" style-class="" visibility="package" change-tracking-state="added" creator="P67529f5b07664900a303b7c23a9fb7c0" creation-date="09/28/2019 15:44:50" from="dic8c35f3669fb4b52aa8edc7e4efce2314109" to="dbf9d6d14f37481890a8bbdf1c58f80a" />
         </abstract-items>
         <layer id="04bcb864d8714afe83a81cc315756b26" name="Default" visible="true" enabled="true" locked="false">
           <item id="dbf9d6d14f37481890a8bbdf1c58f80a" iid="34ba454bf9914e2a9bbea0b9dceb823a" anchor="None" creation-date="09/27/2019 10:48:39" order-index="0" type="entity">
@@ -550,6 +611,19 @@
               </points>
             </layout>
             <relation from="9aa9ef25cbf14460a6ef3885ccc77042" from-iid="a93f85c8d46f44d982ef1ed1e650bb2b" to="di29fcdf7bfecf4bb1911bbcb84ac72e919743" to-iid="0a51a710eee34fd5b60fd86e2ef484a4" />
+          </item>
+          <item id="dic8c35f3669fb4b52aa8edc7e4efce2314109" iid="173285faac8342c9bf1c3dc2f86c9e3c" anchor="None" creation-date="09/27/2019 10:48:39" order-index="0" type="entity">
+            <layout ax="1278.5" ay="187" awidth="329" aheight="185" x="1278.5" y="187" width="329" height="185" />
+            <class />
+          </item>
+          <item id="82482a7e602d40d4878d289a859aeefb" iid="ad83fb132fb3465fa8640a860f8f22cf" creation-date="09/28/2019 15:44:50" order-index="14" type="relation">
+            <layout line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="1443" y1="187" x2="604" y2="-51" start-border-pos="0.125" end-border-pos="0.375" name-position="0,0">
+              <points>
+                <point x="1443" y="187" />
+                <point x="604" y="-51" />
+              </points>
+            </layout>
+            <relation from="dic8c35f3669fb4b52aa8edc7e4efce2314109" from-iid="173285faac8342c9bf1c3dc2f86c9e3c" to="dbf9d6d14f37481890a8bbdf1c58f80a" to-iid="34ba454bf9914e2a9bbea0b9dceb823a" />
           </item>
         </layer>
       </diagram>

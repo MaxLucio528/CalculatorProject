@@ -12,7 +12,6 @@ public class Sum extends Calculus {
 	
 	/**
 	 * Método construtor de Sum, que apenas inicializa ambos os atributos.
-	 * @author Max Lucio
 	 * @param num float - Números para executar a soma, aqui inicializado com 0
 	 * @param result double - Número que contêm o resultado da soma, aqui inicializado com 0.0
 	 */
@@ -23,7 +22,6 @@ public class Sum extends Calculus {
 	/**
 	 * Método que pega os números que o usuário definiu para a fazer a soma e que chama o
 	 * método operation para executar a soma.
-	 * @author Max Lucio
 	 * @param num float - Números para executar a soma
 	 */
 	@Override
@@ -34,7 +32,6 @@ public class Sum extends Calculus {
 
 	/**
 	 * Método que soma todos os números definidos pelo usuário.
-	 * @author Max Lucio
 	 */
 	@Override
 	public void operation() {
@@ -47,7 +44,6 @@ public class Sum extends Calculus {
 
 	/**
 	 * Método que retorna o valor da soma efetuada.
-	 * @author Max Lucio
 	 * @return double - Valor da soma efetuada
 	 */
 	@Override

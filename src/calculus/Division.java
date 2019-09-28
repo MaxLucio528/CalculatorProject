@@ -12,7 +12,6 @@ public class Division extends Calculus {
 	
 	/**
 	 * Método construtor de Division, que apenas inicializa ambos os atributos.
-	 * @author Max Lucio
 	 * @param num float - Números para executar a divisão, aqui inicializado com 0
 	 * @param result double - Número que contêm o resultado da divisão, aqui inicializado com 0.0
 	 */
@@ -23,7 +22,6 @@ public class Division extends Calculus {
 	/**
 	 * Método que pega os números que o usuário definiu para a fazer a divisão e que chama o
 	 * método operation para executar a divisão.
-	 * @author Max Lucio
 	 * @param num float - Números para executar a divisão
 	 */
 	@Override
@@ -34,7 +32,6 @@ public class Division extends Calculus {
 
 	/**
 	 * Método que divide todos os números definidos pelo usuário.
-	 * @author Max Lucio
 	 */
 	@Override
 	public void operation() {
@@ -47,7 +44,6 @@ public class Division extends Calculus {
 
 	/**
 	 * Método que retorna o valor da divisão efetuada.
-	 * @author Max Lucio
 	 * @return double - Valor da divisão efetuada
 	 */
 	@Override
