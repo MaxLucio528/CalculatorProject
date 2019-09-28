@@ -14,10 +14,6 @@
     </entity-names>
     <entity-ids>
       <counter>
-        <item-type type-id="" type="AbstractElementGroup" />
-        <value>317</value>
-      </counter>
-      <counter>
         <item-type type-id="class" type="UmlClass" />
         <value>6</value>
       </counter>
@@ -32,6 +28,10 @@
       <counter>
         <item-type type-id="dependency" type="UmlDependency" />
         <value>8</value>
+      </counter>
+      <counter>
+        <item-type type-id="" type="AbstractElementGroup" />
+        <value>10</value>
       </counter>
     </entity-ids>
     <diagrams>
@@ -53,6 +53,7 @@
   </counters>
   <alias-groups />
   <management uid="md-bcb21bdcf3fe4f8390b5bc9df4cd75dc" name="" task-id-sequence="0">
+    <working-schedule uid="ws-e70a59febde34d1bafb1631f4b81a5ae" hours="8" monday="8" tuesday="8" wednesday="8" thursday="8" friday="8" saturday="0" sunday="0" />
     <persons>
       <person id="P67529f5b07664900a303b7c23a9fb7c0">
         <first-name>Max</first-name>
@@ -62,6 +63,7 @@
         <phone-number />
         <description />
         <color>#00000000</color>
+        <working-schedule uid="ws-0c5fcadc525d45aa861ce5ddfccca81f" hours="8" monday="8" tuesday="8" wednesday="8" thursday="8" friday="8" saturday="0" sunday="0" />
       </person>
     </persons>
     <teams />
@@ -100,7 +102,7 @@
       </meta>
       <abstract-items />
       <sub-models />
-      <diagram type="uml-class" id="p02b68fe3a5c5499ca01dcb5878119f52_487096572" name="Calculadora" order-index="1" uid="" show-id="false" show-name="true" show-parent-name="false" name-style="local-auto-parents" show-stereotypes="true" show-tagged-values="false" show-template-parameters="true" show-fields="true" show-empty-compartments="true" show-special-indicators="false" show-attributes="true" show-attribute-visibility="true" show-operations="true" show-operation-parameters="true" show-operation-visibility="true" show-nullability="true" show-sequence-number="false" show-extension-points="false" show-relationship-texts="true" show-description="false" show-field-description="false" auto-routed-paths="false" view-location="-242,-67" zoom="0.6">
+      <diagram type="uml-class" id="p02b68fe3a5c5499ca01dcb5878119f52_487096572" name="Calculadora" order-index="1" uid="" show-id="false" show-name="true" show-parent-name="false" name-style="local-auto-parents" show-stereotypes="true" show-tagged-values="false" show-template-parameters="true" show-fields="true" show-empty-compartments="true" show-special-indicators="false" show-attributes="true" show-attribute-visibility="true" show-operations="true" show-operation-parameters="true" show-operation-visibility="true" show-nullability="true" show-sequence-number="false" show-extension-points="false" show-relationship-texts="true" show-description="false" show-field-description="false" auto-routed-paths="false" view-location="56,225">
         <style>
           <background-color index="1" color="#FFFFFFFF" />
           <background-color index="2" color="#FFFFFFFF" />
@@ -119,21 +121,21 @@
         <abstract-items>
           <item id="dbf9d6d14f37481890a8bbdf1c58f80a" cid="C001" type="class" name="Calculus" style-class="" is-abstract="true" visibility="package" change-tracking-state="added" creator="P67529f5b07664900a303b7c23a9fb7c0" creation-date="09/27/2019 10:48:39">
             <attributes>
-              <attribute id="a99b371500d5042e0978965c4f74cec05559" cid="ELEM001" name="num" creation-date="01/01/0001 00:00:00" type="float[]" type-id="float[]" visibility="private">
+              <attribute id="a99b371500d5042e0978965c4f74cec05559" cid="ELEM001" name="num" creation-date="01/01/0001 00:00:00" type="float" type-id="float" visibility="private">
                 <source-codes>
-                  <source-code language="ActionScript" uid="scs-192c9ffe-7281-4573-9aac-d53fc3aa0178" />
+                  <source-code language="ActionScript" uid="scs-f6ea1ca7-8cf9-4dca-9b1c-5c1fb8259381" />
                 </source-codes>
               </attribute>
               <attribute id="a093fb56cf7934bc391e18285d42fd93f103" cid="ELEM002" name="result" creation-date="01/01/0001 00:00:00" type="double" type-id="double" visibility="private">
                 <source-codes>
-                  <source-code language="ActionScript" uid="scs-096104fd-a170-4caf-b8db-68259a3acc74" />
+                  <source-code language="ActionScript" uid="scs-ec3547fd-e8e8-4d45-8c78-13fd518ab11d" />
                 </source-codes>
               </attribute>
             </attributes>
             <operations>
               <operation id="o28d28678fd6c476699fba4d2923adc3f382" cid="ELEM010" name="Calculus" creation-date="01/01/0001 00:00:00" type="" type-id="" visibility="public">
                 <parameters>
-                  <parameter id="p5bdc0e193b194003b10a983be840b338" name="num" type="float[]" type-id="float[]" />
+                  <parameter id="p5bdc0e193b194003b10a983be840b338" name="num" type="float" type-id="float" />
                   <parameter id="p4c7a236a46134e8491061cf6797c963b" name="result" type="double" type-id="double" />
                 </parameters>
                 <source-codes>
@@ -142,7 +144,7 @@
               </operation>
               <operation id="o9f25619c9de340f5a437cc01414fe1d0883" cid="ELEM013" name="getNumbers" creation-date="01/01/0001 00:00:00" type="void" type-id="void" visibility="public" abstract="true">
                 <parameters>
-                  <parameter id="p698f8449ea8d4c448a86bb4cb8e51c2d" name="num" type="float[]" type-id="float[]" />
+                  <parameter id="p698f8449ea8d4c448a86bb4cb8e51c2d" name="num" type="float" type-id="float" />
                 </parameters>
                 <source-codes>
                   <source-code language="ActionScript" />
@@ -165,7 +167,7 @@
           </item>
           <item id="di9490fa981c724880bc84fd65f96e727b9370" cid="C001" type="class" name="Sum" style-class="" visibility="package" change-tracking-state="added" creation-date="09/27/2019 10:48:39">
             <attributes>
-              <attribute id="a99b371500d5042e0978965c4f74cec05559" cid="ELEM001" name="num" creation-date="01/01/0001 00:00:00" type="float[]" type-id="float[]" visibility="private">
+              <attribute id="a99b371500d5042e0978965c4f74cec05559" cid="ELEM001" name="num" creation-date="01/01/0001 00:00:00" type="float" type-id="float" visibility="private">
                 <source-codes>
                   <source-code language="ActionScript" uid="scs-caf9bebc-8161-453d-a1c7-3193213ca270" />
                 </source-codes>
@@ -179,7 +181,7 @@
             <operations>
               <operation id="o28d28678fd6c476699fba4d2923adc3f382" cid="ELEM010" name="Sum" creation-date="01/01/0001 00:00:00" type="" type-id="" visibility="public">
                 <parameters>
-                  <parameter id="p5bdc0e193b194003b10a983be840b338" name="num" type="float[]" type-id="float[]" />
+                  <parameter id="p5bdc0e193b194003b10a983be840b338" name="num" type="float" type-id="float" />
                   <parameter id="p4c7a236a46134e8491061cf6797c963b" name="result" type="double" type-id="double" />
                 </parameters>
                 <source-codes>
@@ -188,7 +190,7 @@
               </operation>
               <operation id="o9f25619c9de340f5a437cc01414fe1d0883" cid="ELEM013" name="getNumbers" creation-date="01/01/0001 00:00:00" type="void" type-id="void" visibility="public">
                 <parameters>
-                  <parameter id="p698f8449ea8d4c448a86bb4cb8e51c2d" name="num" type="float[]" type-id="float[]" />
+                  <parameter id="p698f8449ea8d4c448a86bb4cb8e51c2d" name="num" type="float" type-id="float" />
                 </parameters>
                 <source-codes>
                   <source-code language="ActionScript" />
@@ -211,7 +213,7 @@
           </item>
           <item id="di29fcdf7bfecf4bb1911bbcb84ac72e919743" cid="" type="class" name="Subtraction" style-class="" visibility="package" change-tracking-state="added" creation-date="09/27/2019 10:48:39">
             <attributes>
-              <attribute id="a99b371500d5042e0978965c4f74cec05559" cid="ELEM001" name="num" creation-date="01/01/0001 00:00:00" type="float[]" type-id="float[]" visibility="private">
+              <attribute id="a99b371500d5042e0978965c4f74cec05559" cid="ELEM001" name="num" creation-date="01/01/0001 00:00:00" type="float" type-id="float" visibility="private">
                 <source-codes>
                   <source-code language="ActionScript" uid="scs-cfd62dbb-b2c8-4f65-8fa3-a4761453d0e4" />
                 </source-codes>
@@ -225,7 +227,7 @@
             <operations>
               <operation id="o28d28678fd6c476699fba4d2923adc3f382" cid="ELEM010" name="Subtraction" creation-date="01/01/0001 00:00:00" type="" type-id="" visibility="public">
                 <parameters>
-                  <parameter id="p5bdc0e193b194003b10a983be840b338" name="num" type="float[]" type-id="float[]" />
+                  <parameter id="p5bdc0e193b194003b10a983be840b338" name="num" type="float" type-id="float" />
                   <parameter id="p4c7a236a46134e8491061cf6797c963b" name="result" type="double" type-id="double" />
                 </parameters>
                 <source-codes>
@@ -234,7 +236,7 @@
               </operation>
               <operation id="o9f25619c9de340f5a437cc01414fe1d0883" cid="ELEM013" name="getNumbers" creation-date="01/01/0001 00:00:00" type="void" type-id="void" visibility="public">
                 <parameters>
-                  <parameter id="p698f8449ea8d4c448a86bb4cb8e51c2d" name="num" type="float[]" type-id="float[]" />
+                  <parameter id="p698f8449ea8d4c448a86bb4cb8e51c2d" name="num" type="float" type-id="float" />
                 </parameters>
                 <source-codes>
                   <source-code language="ActionScript" />
@@ -257,7 +259,7 @@
           </item>
           <item id="dib01008945137403cb42518af9334bef47553" cid="C001" type="class" name="Multiplication" style-class="" visibility="package" change-tracking-state="added" creation-date="09/27/2019 10:48:39">
             <attributes>
-              <attribute id="a99b371500d5042e0978965c4f74cec05559" cid="ELEM001" name="num" creation-date="01/01/0001 00:00:00" type="float[]" type-id="float[]" visibility="private">
+              <attribute id="a99b371500d5042e0978965c4f74cec05559" cid="ELEM001" name="num" creation-date="01/01/0001 00:00:00" type="float" type-id="float" visibility="private">
                 <source-codes>
                   <source-code language="ActionScript" uid="scs-13fda28d-4043-4678-98d7-764582f1f431" />
                 </source-codes>
@@ -271,7 +273,7 @@
             <operations>
               <operation id="o28d28678fd6c476699fba4d2923adc3f382" cid="ELEM010" name="Mutiplication" creation-date="01/01/0001 00:00:00" type="" type-id="" visibility="public">
                 <parameters>
-                  <parameter id="p5bdc0e193b194003b10a983be840b338" name="num" type="float[]" type-id="float[]" />
+                  <parameter id="p5bdc0e193b194003b10a983be840b338" name="num" type="float" type-id="float" />
                   <parameter id="p4c7a236a46134e8491061cf6797c963b" name="result" type="double" type-id="double" />
                 </parameters>
                 <source-codes>
@@ -280,7 +282,7 @@
               </operation>
               <operation id="o9f25619c9de340f5a437cc01414fe1d0883" cid="ELEM013" name="getNumbers" creation-date="01/01/0001 00:00:00" type="void" type-id="void" visibility="public">
                 <parameters>
-                  <parameter id="p698f8449ea8d4c448a86bb4cb8e51c2d" name="num" type="float[]" type-id="float[]" />
+                  <parameter id="p698f8449ea8d4c448a86bb4cb8e51c2d" name="num" type="float" type-id="float" />
                 </parameters>
                 <source-codes>
                   <source-code language="ActionScript" />
@@ -303,7 +305,7 @@
           </item>
           <item id="dib01dac9c29804b3fbb49537d5a8a77789992" cid="C001" type="class" name="Division" style-class="" visibility="package" change-tracking-state="added" creation-date="09/27/2019 10:48:39">
             <attributes>
-              <attribute id="a99b371500d5042e0978965c4f74cec05559" cid="ELEM001" name="num" creation-date="01/01/0001 00:00:00" type="float[]" type-id="float[]" visibility="private">
+              <attribute id="a99b371500d5042e0978965c4f74cec05559" cid="ELEM001" name="num" creation-date="01/01/0001 00:00:00" type="float" type-id="float" visibility="private">
                 <source-codes>
                   <source-code language="ActionScript" uid="scs-25b1fbd0-dc8f-457c-8ffc-606eb47b14c3" />
                 </source-codes>
@@ -317,7 +319,7 @@
             <operations>
               <operation id="o28d28678fd6c476699fba4d2923adc3f382" cid="ELEM010" name="Division" creation-date="01/01/0001 00:00:00" type="" type-id="" visibility="public">
                 <parameters>
-                  <parameter id="p5bdc0e193b194003b10a983be840b338" name="num" type="float[]" type-id="float[]" />
+                  <parameter id="p5bdc0e193b194003b10a983be840b338" name="num" type="float" type-id="float" />
                   <parameter id="p4c7a236a46134e8491061cf6797c963b" name="result" type="double" type-id="double" />
                 </parameters>
                 <source-codes>
@@ -326,7 +328,7 @@
               </operation>
               <operation id="o9f25619c9de340f5a437cc01414fe1d0883" cid="ELEM013" name="getNumbers" creation-date="01/01/0001 00:00:00" type="void" type-id="void" visibility="public">
                 <parameters>
-                  <parameter id="p698f8449ea8d4c448a86bb4cb8e51c2d" name="num" type="float[]" type-id="float[]" />
+                  <parameter id="p698f8449ea8d4c448a86bb4cb8e51c2d" name="num" type="float" type-id="float" />
                 </parameters>
                 <source-codes>
                   <source-code language="ActionScript" />

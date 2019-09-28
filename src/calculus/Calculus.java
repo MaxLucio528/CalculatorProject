@@ -3,21 +3,21 @@ package calculus;
 /**
  * Classe abstrata que generaliza uma operação de cálculo
  * @author Max Lucio
- * @version 1.0
+ * @version 1.1
  * @since Release 01 da aplicação
  */
 public abstract class Calculus {
-	private float[] num;
+	private float num;
 	private double result;
 	
 	/**
 	 * Construtor da classe abstrata, que é chamado pelas subclasses
 	 * deste programa.
 	 * @author Max Lucio
-	 * @param num float[] - Números que irão executar algum cálculo em subclasses
+	 * @param num float - Números que irão executar algum cálculo em subclasses
 	 * @param result double - Resultado de algum cálculo efetuado em subclasses
 	 */
-	public Calculus(float[] num, double result) {
+	public Calculus(float num, double result) {
 		this.num = num;
 		this.result = result;
 	}
@@ -26,9 +26,10 @@ public abstract class Calculus {
 	 * Método abstrato que em subclasses irá pegar os números para efetuar
 	 * alguma operação matemática.
 	 * @author Max Lucio
-	 * @param num float[] - Números que irão ser usados em operações feitas em subclasses
+	 * @param num float - Números que irão ser usados em operações feitas em subclasses,
+	 * jogando os valores em result posteriormente.
 	 */
-	public abstract void getNumbers(float[] num);
+	public abstract void getNumbers(float num);
 	/**
 	 * Método abstrato que em subclasses, irá executar a operação de algum cálculo.
 	 * @author Max Lucio

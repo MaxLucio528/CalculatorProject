@@ -6,7 +6,7 @@ import java.util.InputMismatchException;
  * Classe que cuida da inicialização do programa, redirecionando para outra classe
  * que executa os processos de execução.
  * @author Max Lucio
- * @version 1.0
+ * @version 1.1
  * @since Release 01 da aplicação
  */
 public class StartProgram {
@@ -27,7 +27,7 @@ public class StartProgram {
 			StartProgram.main(args);
 		}
 		catch(Exception e) {
-			System.out.println("\nErro! Algo deu errado por conta de " + e.toString());
+			System.out.println("\nErro! Algo deu errado por conta de " + e.toString() + "\n");
 			StartProgram.main(args);
 		}
 	}

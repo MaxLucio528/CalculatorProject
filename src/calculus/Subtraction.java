@@ -3,31 +3,33 @@ package calculus;
 /**
  * Subclasse de Calculus que é responsável por fazer operações de subtração.
  * @author Max Lucio
- * @version 1.0
+ * @version 1.1
  * @since Release 01 da aplicação
  */
 public class Subtraction extends Calculus {
-	private float[] num;
+	private float num;
 	private double result;
 	
 	/**
 	 * Método construtor de Subtraction, que apenas inicializa ambos os atributos.
 	 * @author Max Lucio
-	 * @param num float[] - Números para executar a subtração, aqui inicializado com null
+	 * @param num float - Números para executar a subtração, aqui inicializado com 0
 	 * @param result double - Número que contêm o resultado da subtração, aqui inicializado com 0.0
 	 */
-	public Subtraction(float[] num, double result) {
+	public Subtraction(float num, double result) {
 		super(num, result);
 	}
 
 	/**
-	 * Método que pega os números que o usuário definiu para a fazer a subtração.
+	 * Método que pega os números que o usuário definiu para a fazer a subtração e que chama o
+	 * método operation para executar a subtração.
 	 * @author Max Lucio
-	 * @param num float[] - Números para executar a soma
+	 * @param num float - Números para executar a subtração
 	 */
 	@Override
-	public void getNumbers(float[] num) {
+	public void getNumbers(float num) {
 		this.num = num;
+		operation();
 	}
 
 	/**
@@ -36,10 +38,10 @@ public class Subtraction extends Calculus {
 	 */
 	@Override
 	public void operation() {
-		result = num[0];
-		
-		for(int i = 1; i < num.length; i++) {
-			result -= num[i];
+		if(result == 0.0) {
+			result = num;
+		}else {
+			result -= num;
 		}
 	}
 
