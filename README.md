@@ -5,4 +5,4 @@ Atualmente a calculadora executa as quatro operações básicas e não possui in
 
 Para editar o Diagrama de Classes, utilize o Software Ideas Modeler.
 
-Versão atual: 1.0
+Versão atual: 1.1
