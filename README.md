@@ -26,7 +26,9 @@ Versão atual: 1.1.2
 **Versão 1.1.2 (05/10/2019)**
 
 -> Modificação para que a versão feita em IDE ficasse em uma branch secundária.
+
 -> Versão livre para rodar em terminais criada.
+
 -> Acentuação removida dos comentários para evitar problemas com os caracteres.
 
 **Versão 1.1.1 (28/09/2019)**
