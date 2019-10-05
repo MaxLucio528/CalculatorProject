@@ -5,9 +5,29 @@ Atualmente a calculadora executa as quatro operações básicas e potenciação,
 
 Para editar o Diagrama de Classes, utilize o Software Ideas Modeler.
 
-Versão atual: 1.1.1
+## Compilando e executando o código
+
+1 - Entre na pasta "src" e digite no seu terminal o seguinte:
+
+~~~~
+javac -d ../. *.java
+~~~~
+
+2 - Volte a pasta anterior e digite no terminal o seguinte:
+
+~~~
+java -cp . calculus.StartProgram
+~~~
+
+Versão atual: 1.1.2
 
 ## Changelog
+
+**Versão 1.1.2 (05/10/2019)**
+
+-> Modificação para que a versão feita em IDE ficasse em uma branch secundária.
+-> Versão livre para rodar em terminais criada.
+-> Acentuação removida dos comentários para evitar problemas com os caracteres.
 
 **Versão 1.1.1 (28/09/2019)**
 
