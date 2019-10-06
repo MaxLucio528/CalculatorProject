@@ -1,4 +1,5 @@
 # CalculatorProject
+
 Calculadora feita em Java, almeja-se criar uma calculadora com interface gráfica até a versão final.
 
 Atualmente a calculadora executa as quatro operações básicas e potenciação, não possui interface gráfica e é executada no console.
@@ -7,25 +8,35 @@ Para editar o Diagrama de Classes, utilize o Software Ideas Modeler.
 
 ## Compilando e executando o código
 
-1 - Entre na pasta "src" e digite no seu terminal o seguinte:
+1 - Estando na pasta raíz, digite o seguinte em seu terminal:
 
 ~~~~
-javac -d ../. *.java
+javac -d bin src/calculus/*.java
 ~~~~
 
-2 - Volte a pasta anterior e digite no terminal o seguinte:
+2 - Em seguida para executar digite:
 
 ~~~
-java -cp . calculus.StartProgram
+java -cp bin calculus.StartProgram
 ~~~
 
-Versão atual: 1.1.2
+3 - Para gerar o JavaDoc digite o seguinte:
+
+~~~
+javadoc -d doc src/calculus/*.java
+~~~
+
+Versão atual: 1.1.3
 
 ## Changelog
 
+**Versão 1.1.3 (06/10/2019)**
+
+-> Modificação na estrutura dos arquivos, agora com a pasta bin presente, assim como a pasta calculus armazena o código-fonte dentro da pasta src.
+
 **Versão 1.1.2 (05/10/2019)**
 
--> Modificação para que a versão feita em IDE ficasse em uma branch secundária.
+-> Modificação para que a versão feita na IDE Eclipse ficasse em uma branch secundária.
 
 -> Versão livre para rodar em terminais criada.
 
