@@ -2,7 +2,7 @@
 
 Calculadora feita em Java, almeja-se criar uma calculadora com interface gráfica até a versão final.
 
-Atualmente a calculadora executa as quatro operações básicas e potenciação, não possui interface gráfica e é executada no console.
+Atualmente a calculadora executa as quatro operações básicas e potenciação, não possui interface gráfica e é executada no terminal.
 
 Para editar o Diagrama de Classes, utilize o Software Ideas Modeler.
 
@@ -26,6 +26,8 @@ java -cp bin calculus.StartProgram
 javadoc -d doc src/calculus/*.java
 ~~~
 
+*** Alternativamente você pode importar esse programa em uma IDE para executá-lo.**
+
 Versão atual: 1.1.3
 
 ## Changelog
@@ -33,6 +35,8 @@ Versão atual: 1.1.3
 **Versão 1.1.3 (06/10/2019)**
 
 -> Modificação na estrutura dos arquivos, agora com a pasta bin presente, assim como a pasta calculus armazena o código-fonte dentro da pasta src.
+
+-> Remoção da EclipseBranch.
 
 **Versão 1.1.2 (05/10/2019)**
 
