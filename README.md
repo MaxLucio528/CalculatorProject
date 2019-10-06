@@ -26,7 +26,7 @@ java -cp bin calculus.StartProgram
 javadoc -d doc src/calculus/*.java
 ~~~
 
-*** Alternativamente você pode importar esse programa em uma IDE para executá-lo.**
+**Alternativamente você pode importar esse programa em uma IDE para executá-lo.**
 
 Versão atual: 1.1.3
 
