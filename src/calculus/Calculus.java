@@ -1,20 +1,19 @@
 package calculus;
 
 /**
- * Classe abstrata que generaliza uma operacao de calculo
+ * Generalize a calculus operation.
  * @author Max Lucio
- * @version 1.1.1
- * @since Release 01 da aplicação
+ * @version 1.2
+ * @since Release 02 of the application.
  */
 public abstract class Calculus {
 	private float num;
 	private double result;
 	
 	/**
-	 * Construtor da classe abstrata, que e chamado pelas subclasses
-	 * deste programa.
-	 * @param num float - Numeros que irao executar algum calculo em subclasses
-	 * @param result double - Resultado de algum calculo efetuado em subclasses
+	 * Constructor of the abstract class.
+	 * @param num float - Will be the operand of some calculus in subclasses.
+	 * @param result double - Will have the result of some calculus in subclasses.
 	 */
 	public Calculus(float num, double result) {
 		this.num = num;
@@ -22,20 +21,18 @@ public abstract class Calculus {
 	}
 	
 	/**
-	 * Metodo abstrato que em subclasses ira pegar os Numeros para efetuar
-	 * alguma operacao matematica.
-	 * @param num float - Numeros que irao ser usados em operacoes feitas em subclasses,
-	 * jogando os valores em result posteriormente.
+	 * Will get numbers to make some mathematic operations in subclasses.
+	 * @param num float - Will be used in operations made in subclasses,
+	 * throwing the values in result posteriorly.
 	 */
 	public abstract void getNumbers(float num);
 	/**
-	 * Metodo abstrato que em subclasses, ira executar a operacao de algum calculo.
+	 * Executes a calculus operation.
 	 */
 	public abstract void operation();
 	/**
-	 * Metodo abstrato que em subclasses, ira mostrar o resultado de uma operacao
-	 * matematica.
-	 * @return double - Resultado da operacao matematica solicitada pelo usuário
+	 * Shows the result of a mathematic operation in subclasses.
+	 * @return double - Result of the mathematic operation solicitated by the user.
 	 */
 	public abstract double showResult();
 }

@@ -1,60 +1,67 @@
 # CalculatorProject
 
-Calculadora feita em Java, almeja-se criar uma calculadora com interface gráfica até a versão final.
+Made by: Max Lucio Martins de Assis
 
-Atualmente a calculadora executa as quatro operações básicas e potenciação, não possui interface gráfica e é executada no terminal.
+Calculator made in Java, the goal is to make a calculator with graphical interface till the final version.
 
-Para editar o Diagrama de Classes, utilize o Software Ideas Modeler.
+## Things to Know
 
-## Compilando e executando o código
+Now the calculator executes the four basic operations and power, it doesn't have the graphical interface and it's executed in the terminal.
 
-1 - Estando na pasta raíz, digite o seguinte em seu terminal:
+To edit the Class Diagram, utilize Software Ideas Modeler.
+
+## Compilation and Execution
+
+1 - In the root folder of the project, type the following in your terminal:
 
 ~~~~
 javac -d bin src/calculus/*.java
 ~~~~
 
-2 - Em seguida para executar digite:
+2 - Next, to execute it type the following:
 
 ~~~
 java -cp bin calculus.StartProgram
 ~~~
 
-3 - Para gerar o JavaDoc digite o seguinte:
+3 - To generate the JavaDoc type the following:
 
 ~~~
 javadoc -d doc src/calculus/*.java
 ~~~
 
-**Alternativamente você pode importar esse programa em uma IDE para executá-lo.**
+**Alternatively you can import this program on your IDE to execute it.**
 
-Versão atual: 1.1.3
+Current Version: 1.2
 
 ## Changelog
 
-**Versão 1.1.3 (06/10/2019)**
+**Version 1.2 (23/11/2018) [FORMAT (DD/MM/YY)]**
 
--> Modificação na estrutura dos arquivos, agora com a pasta bin presente, assim como a pasta calculus armazena o código-fonte dentro da pasta src.
+-> The program is in english as well as the comments.
 
--> Remoção da EclipseBranch.
+**Version 1.1.3 (06/10/2019) [FORMAT (DD/MM/YY)]**
 
-**Versão 1.1.2 (05/10/2019)**
+-> Changes in the file structure, now with a bin folder presents, as well as a calculus folder that stores the source-code inside the src folder.
 
--> Modificação para que a versão feita na IDE Eclipse ficasse em uma branch secundária.
+-> Removal of the EclipseBranch.
 
--> Versão livre para rodar em terminais criada.
+**Version 1.1.2 (05/10/2019) [FORMAT (DD/MM/YY)]**
 
--> Acentuação removida dos comentários para evitar problemas com os caracteres.
+-> Modification to the version made in the Eclipse IDE so it could stay in a secondary branch.
 
-**Versão 1.1.1 (28/09/2019)**
+-> Free version to run in terminals created.
 
--> Adição da classe Power, responsável pela execução de operações de potenciação; por consequêcia disso, houve
-leves mudanças no código do MainMenu.java e ProgramExecution.java para acomodar a nova operação matemática.
+-> Accentuation removed from the comments to prevent problemas with the comments.
 
-**Versão 1.1 (28/09/2019)**
+**Version 1.1.1 (28/09/2019) [FORMAT (DD/MM/YY)]**
 
--> Modificação das funções que executam as 4 operações, alterações foram feitas no ProgramExecution.java
+-> Class Power addedm responsible for the execution of power operations; because of that, there was slight changes in MainMenu.java and ProgramExecution.java code to accomodate the new mathematic operation.
 
-**Versão 1.0 (27/09/2019)** 
+**Version 1.1 (28/09/2019) [FORMAT (DD/MM/YY)]**
 
--> Criação do programa, com operações de adição, subtração, multiplicação e divisão.
+-> Modification of the functions that execute the 4 operations, changes were mande on ProgramExecution.java.
+
+**Version 1.0 (27/09/2019) [FORMAT (DD/MM/YY)]** 
+
+-> Program creation, with sum, subtraction, multiplication and division operations.

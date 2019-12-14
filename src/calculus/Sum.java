@@ -1,28 +1,28 @@
 package calculus;
 
 /**
- * Subclasse de Calculus que e responsavel por fazer operacoes de adicao.
+ * Responsible for doing sum operations.
  * @author Max Lucio
- * @version 1.1
- * @since Release 01 da aplicacao
+ * @version 1.2
+ * @since Release 02 of the application.
  */
 public class Sum extends Calculus {
 	private float num;
 	private double result;
 	
 	/**
-	 * Metodo construtor de Sum, que apenas inicializa ambos os atributos.
-	 * @param num float - Numeros para executar a soma, aqui inicializado com 0
-	 * @param result double - Numero que contem o resultado da soma, aqui inicializado com 0.0
+	 * Constructor of Sum.
+	 * @param num float - Numbers to execute the sum, here initialized with 0.
+	 * @param result double - Will constain the result of the sum, here initialized with 0.0.
 	 */
 	public Sum(float num, double result) {
 		super(num, result);
 	}
 	
 	/**
-	 * Metodo que pega os numeros que o usuario definiu para a fazer a soma e que chama o
-	 * metodo operation para executar a soma.
-	 * @param num float - Numeros para executar a soma
+	 * Get the numbers the user defined to do the sum and calls the method operation to
+	 * execute the sum.
+	 * @param num float - Numbers to execute the sum.
 	 */
 	@Override
 	public void getNumbers(float num) {
@@ -31,7 +31,7 @@ public class Sum extends Calculus {
 	}
 
 	/**
-	 * Metodo que soma todos os numeros definidos pelo usuario.
+	 * Sums all the numbers defined by the user.
 	 */
 	@Override
 	public void operation() {
@@ -43,8 +43,8 @@ public class Sum extends Calculus {
 	}
 
 	/**
-	 * Metodo que retorna o valor da soma efetuada.
-	 * @return double - Valor da soma efetuada
+	 * Returns the value of the sum made.
+	 * @return double - Value of the sum.
 	 */
 	@Override
 	public double showResult() {

@@ -5,19 +5,19 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 /**
- * Classe responsavel pela execucao do programa, contendo o metodo que faz isso.
+ * Responsible for the program execution.
  * @author Max Lucio
- * @version 1.1.1
- * @since Release 01 da aplicacao
+ * @version 1.2
+ * @since Release 02 of the application.
  */
 public class ProgramExecution {
 
 	/**
-	 * Metodo que executa todos os processos do programa recebendo os nameros com que
-	 * o usuario ira fazer um calculo e redirecionando para as classes que executam 
-	 * as operacoes matematicas.
-	 * @throws InputMismatchException - Excecao jogada caso o usuario digite qualquer
-	 * coisa que nao seja um namero.
+	 * Executes all the processes of the program, recieving the numbers the user will
+	 * do the calculus and redirecting to the classes that executes the mathematical
+	 * opeations.
+	 * @throws InputMismatchException - Exception thrown if the user types anything that
+	 * isn't a number.
 	 */
 	public void process() throws InputMismatchException {
 		int op;
@@ -40,13 +40,13 @@ public class ProgramExecution {
 			input.nextLine();
 			
 			if(op == 0) {
-				System.out.println("\nPrograma finalizado...\n");
+				System.out.println("\nProgram terminated...\n");
 				break;
 			}
 			
 			switch(op) {
 				case 1:
-					System.out.println("\nDigite os numeros que ira somar (Digite '=' para obter o resultado): ");
+					System.out.println("\nType the numbers you'll sum (Type '=' to get the result): ");
 					
 					do {
 						num = input.nextLine();
@@ -60,10 +60,10 @@ public class ProgramExecution {
 					
 					result = calculus.get(0).showResult();
 					
-					System.out.println("\nO resultado da soma e: " + result + "\n");
+					System.out.println("\nThe result of the sum is: " + result + "\n");
 				break;
 				case 2:
-					System.out.println("\nDigite os numeros que ira subtrair (Digite '=' para obter o resultado): ");
+					System.out.println("\nType the numbers you'll subtract (Type '=' to get the result): ");
 					
 					do {
 						num = input.nextLine();
@@ -78,10 +78,10 @@ public class ProgramExecution {
 
 					result = calculus.get(1).showResult();
 					
-					System.out.println("\nO resultado da subtracao e: " + result + "\n");
+					System.out.println("\nThe result of the subtraction is: " + result + "\n");
 				break;
 				case 3:
-					System.out.println("\nDigite os numeros que ira multiplicar (Digite '=' para obter o resultado): ");
+					System.out.println("\nType the numbers you'll multiplicate (Type '=' to get the result): ");
 					
 					do {
 						num = input.nextLine();
@@ -96,10 +96,10 @@ public class ProgramExecution {
 
 					result = calculus.get(2).showResult();
 					
-					System.out.println("\nO resultado da multiplicacao e: " + result + "\n");
+					System.out.println("\nThe result of the multiplication is: " + result + "\n");
 				break;
 				case 4:
-					System.out.println("\nDigite os numeros que ira dividir (Digite '=' para obter o resultado): ");
+					System.out.println("\nType the numbers you'll divide (Type '=' to get the result): ");
 					
 					do {
 						num = input.nextLine();
@@ -114,14 +114,14 @@ public class ProgramExecution {
 
 					result = calculus.get(3).showResult();
 					
-					System.out.println("\nO resultado da divisao e: " + result + "\n");
+					System.out.println("\nThe result of the division is: " + result + "\n");
 				break;
 				case 5:
-					System.out.println("\nDigite a base para calcular a potencia: ");
+					System.out.println("\nType the base of the power: ");
 					
 					num = input.nextLine();
 						
-					System.out.println("\nDigite o expoente para calcular a potencia: ");
+					System.out.println("\nType the exponent of the power: ");
 						
 					exp = input.nextLine();
 						
@@ -130,10 +130,10 @@ public class ProgramExecution {
 					
 					result = calculus.get(4).showResult();
 					
-					System.out.println("\nO resultado da potenciacao e: " + result + "\n");
+					System.out.println("\nThe result of the power is: " + result + "\n");
 				break;
 				default:
-					System.out.println("\nOpcao Invalida! Tente novamente...\n");
+					System.out.println("\nInvalid Option! Try again...\n");
 			}
 		}while(op != 0);
 		

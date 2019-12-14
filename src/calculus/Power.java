@@ -1,10 +1,10 @@
 package calculus;
 
 /**
- * Subclasse de Calculus que e responsavel por fazer operacoes de potenciacao.
+ * Responsible for doing power operations.
  * @author Max Lucio
- * @version 1.0
- * @since Release 01 da aplicacao
+ * @version 1.2
+ * @since Release 02 of the application.
  */
 public class Power extends Calculus {
 	private float num;
@@ -12,10 +12,10 @@ public class Power extends Calculus {
 	private double result;
 	
 	/**
-	 * Metodo construtor de Power, que apenas inicializa os tres atributos.
-	 * @param num float - Base para executar a potencia, aqui inicializado com 0
-	 * @param exp float - Expoente para executar a potencia, aqui inicializado com 0
-	 * @param result double - Numero que contem o resultado da soma, aqui inicializado com 0.0
+	 * Constructor of Power.
+	 * @param num float - Number to execute the power, here initialized with 0.
+	 * @param exp float - Exponent to execute the power, here initialized with 0.
+	 * @param result double - Will constain the result of the power, here initialized with 0.0.
 	 */
 	public Power(float num, float exp, double result) {
 		super(num, result);
@@ -23,8 +23,8 @@ public class Power extends Calculus {
 	}
 
 	/**
-	 * Metodo que pega a base que o usuario definiu para a fazer a potencia.
-	 * @param num float - Numero para executar a potencia
+	 * Get the numbers the user defined to do the power.
+	 * @param num float - Number to execute the power.
 	 */
 	@Override
 	public void getNumbers(float num) {
@@ -32,9 +32,9 @@ public class Power extends Calculus {
 	}
 	
 	/**
-	 * Metodo que pega o expoente que o usuario definiu para a fazer a potencia e que chama o
-	 * metodo operation para executar a potenciacao.
-	 * @param exp float - Expoente da potencia
+	 * Gets the exponent the user degined to do the power and calls the method operation to
+	 * execute the power.
+	 * @param exp float - Power's exponent.
 	 */
 	public void getExponent(float exp) {
 		this.exp = exp;
@@ -42,7 +42,7 @@ public class Power extends Calculus {
 	}
 
 	/**
-	 * Metodo que executa o calculo da potencia.
+	 * Executes the power based on the numbers defined by the user.
 	 */
 	@Override
 	public void operation() {
@@ -50,8 +50,8 @@ public class Power extends Calculus {
 	}
 
 	/**
-	 * Metodo que retorna o valor da potencia efetuada.
-	 * @return double - Valor da potencia efetuada
+	 * Returns the value of the power made.
+	 * @return double - Value of the power.
 	 */
 	@Override
 	public double showResult() {

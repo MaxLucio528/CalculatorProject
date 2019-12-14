@@ -5,30 +5,30 @@ import java.util.Arrays;
 import java.util.Iterator;
 
 /**
- * Classe que contem um metodo que gera o menu no terminal automaticamente.
+ * Generates the menu on terminal automatically.
  * @author Max Lucio
- * @version 1.1
- * @since Release 01 da aplicacao
+ * @version 1.2
+ * @since Release 02 of the application.
  */
 public class MainMenu {
 	private final String title;
 	private final ArrayList<String> options;
 	
 	/**
-	 * Construtor da classe, onde sao definidos o titulo do menu e as opcoes
-	 * do menu em um ArrayList.
+	 * Constructor of the class, here the title of the menu and it's options
+	 * are defined.
 	 */
 	public MainMenu() {
-		title = "Calculadora MX";
+		title = "Calculator MX";
 		options = new ArrayList<String>();
-		options.addAll(Arrays.asList("1 - Soma", "2 - Subtracao", "3 - Multiplicacao", "4 - Divisao",
-				"5 - Potenciacao", "0 - Sair"));
+		options.addAll(Arrays.asList("1 - Sum", "2 - Subtraction", "3 - Multiplication", "4 - Division",
+				"5 - Power", "0 - Exit"));
 	}
 	
 	/**
-	 * Metodo que gera o menu, puxando as informacoes da String e do ArrayList
-	 * para poder gerar o menu do programa, utiliza-se um Iterator para percorrer
-	 * o ArrayList em um laco for.
+	 * Generates the menu, pulling the info from the String and ArrayList to be
+	 * able to generate the menu of the program, it uses a Iterator to go through
+	 * the ArrayList in a loop.
 	 */
 	public void generateMenu() {
 		Iterator<String> percorre = options.iterator();
@@ -40,6 +40,6 @@ public class MainMenu {
 		}
 		
 		System.out.println();
-		System.out.print("Escolha uma opcao: ");
+		System.out.print("Chose a option: ");
 	}
 }
