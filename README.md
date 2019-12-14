@@ -36,7 +36,7 @@ Current Version: 1.2
 
 ## Changelog
 
-**Version 1.2 (23/11/2018) [FORMAT (DD/MM/YY)]**
+**Version 1.2 (14/12/2019) [FORMAT (DD/MM/YY)]**
 
 -> The program is in english as well as the comments.
 
